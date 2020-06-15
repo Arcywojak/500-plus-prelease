@@ -35,6 +35,8 @@ $white: #FFFFFF;
 
 
 .starting-section{
+    display: flex;
+    flex-direction: column;
     width:100%;
     min-height: 100vh;
 }
@@ -223,7 +225,7 @@ $white: #FFFFFF;
 }
 .footer{
     text-align: center;
-
+    margin-top: auto;
     p{
         &:nth-of-type(2){
             font-size: 14px;
