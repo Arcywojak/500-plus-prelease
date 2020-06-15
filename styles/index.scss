@@ -6,6 +6,17 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+// PREVENT FROM MARKING
+img{
+     -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+/////////////////////////
+
 $purple:#311B92;
 $white: #FFFFFF;
 
@@ -45,14 +56,20 @@ $white: #FFFFFF;
     padding: 0 8vw;
 
     &__images{
+        min-height: 60vh;
+
+        position: relative;
         img{
             display: block;
+            position: absolute;
+            width:40%;
+            max-width: 135px;
 
             &.left{
-                margin-left: auto;
+                left:0;
             }
             &.right{
-                margin-right: auto;
+                right:0;
             }
         }
     }
@@ -72,6 +89,25 @@ $white: #FFFFFF;
         }
     }
 }
+
+.top{
+    &1{
+        top:0;
+    }
+    &2{
+        top:18%  
+    }
+    &3{
+        top:36%   
+    }
+    &4{
+        top:54%    
+    }
+    &5{
+        top:72%;    
+    }
+}
+
 .line{
     height:4px;
     width:100%;

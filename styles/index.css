@@ -8,6 +8,19 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+img {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
 .purple-bg {
   background-color: #311B92;
 }
@@ -52,16 +65,24 @@ body {
   padding: 0 8vw;
 }
 
+.newsletter-block__images {
+  min-height: 60vh;
+  position: relative;
+}
+
 .newsletter-block__images img {
   display: block;
+  position: absolute;
+  width: 40%;
+  max-width: 135px;
 }
 
 .newsletter-block__images img.left {
-  margin-left: auto;
+  left: 0;
 }
 
 .newsletter-block__images img.right {
-  margin-right: auto;
+  right: 0;
 }
 
 .newsletter-block__newsletter h1 {
@@ -76,6 +97,26 @@ body {
 .newsletter-block__newsletter p {
   font-size: 1.5rem;
   text-align: center;
+}
+
+.top1 {
+  top: 0;
+}
+
+.top2 {
+  top: 18%;
+}
+
+.top3 {
+  top: 36%;
+}
+
+.top4 {
+  top: 54%;
+}
+
+.top5 {
+  top: 72%;
 }
 
 .line {
