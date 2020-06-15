@@ -263,7 +263,7 @@ button, input {
   transition: background .2s ease-in-out, color .2s  ease-in-out;
 }
 
-.btn:hover, .btn:focus, .btn:active {
+.btn:hover {
   background-color: #FFFFFF;
   color: #311B92;
   border: 2px solid #311B92;
@@ -273,6 +273,29 @@ button, input {
   .btn {
     margin-bottom: 25px;
   }
+}
+
+.btn i {
+  font-style: normal;
+}
+
+.btn .submitted-i {
+  display: none;
+}
+
+.btn.submitted {
+  color: #8bc34a;
+  background-color: #FFFFFF;
+  border: 2px solid #8bc34a;
+}
+
+.btn.submitted .unsubmitted-i {
+  display: none;
+}
+
+.btn.submitted .submitted-i {
+  display: inline;
+  margin-left: 4px;
 }
 
 .footer {
