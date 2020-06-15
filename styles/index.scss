@@ -15,6 +15,9 @@ img{
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none;
 }
+button, input{
+    outline: none;
+}
 /////////////////////////
 
 $purple:#311B92;
@@ -38,13 +41,30 @@ $white: #FFFFFF;
 
 .header{
     width:100%;
-    padding-left: calc(20px + 4vw);
+
+    @media(max-width: 1000px){
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
 }
 .logo-wrapper{
     border-bottom-right-radius: 9px;
     border-bottom-left-radius: 9px;
     display:inline-block;
     padding:calc(.7vw + 10px); 
+
+    @media (max-width:1000px){
+        margin: 0 auto;
+        padding: calc(.7vw + 10px) calc(.7vw + 20px);
+        border-bottom-right-radius: 25px;
+         border-bottom-left-radius: 25px;
+        img{
+            width:120px;
+            
+            padding: 5px;
+        }
+    }
 }
 .newsletter-block{
     align-items: center;
@@ -62,6 +82,7 @@ $white: #FFFFFF;
         img{
             display: block;
             position: absolute;
+            min-width: 70px;
             width:40%;
             max-width: 135px;
 
@@ -86,6 +107,25 @@ $white: #FFFFFF;
         p{
             font-size: 1.5rem;
             text-align: center;
+        }
+    }
+
+    @media(max-width:1000px){
+        grid-template-columns: 0 100% 0;
+        column-gap: 0;
+
+        &__images{
+            min-height: auto;
+            img{
+                display: none;
+            }
+        }
+
+        &__newsletter{
+            h1{
+                font-size: 2.5rem;
+                line-height: initial;
+            }
         }
     }
 }
@@ -115,21 +155,49 @@ $white: #FFFFFF;
 .input-and-button{
     display: flex;
     justify-content: center;
+
+    @media(max-width: 1000px){
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .input{
+    position: relative;
     background: #EDEDED 0% 0% no-repeat padding-box;
     border:none;
     border-radius: 8px;
-    padding: 4px 20px;
+    padding: 4px 40px 4px 20px;
     height:45px;
-    width: 50%;
+    width: 60%;
     
-    min-width: 250px;
+    min-width: 280px;
     margin-right: 15px;
     font-size: 18px;
 
     &::placeholder{
         color: #C7C7C7;
+    }
+
+    @media(max-width: 1000px){
+        margin: 20px 0 40px 0;
+        width:90%;
+        max-width: 400px;
+    }
+}
+.input-wrapper{
+    display: inline-block;
+    position: relative;
+
+    &::after{
+        content:url("../assets/envelope.svg");
+        right:35px;
+        top:16px;
+         position: absolute;
+         
+         @media(max-width: 1000px){
+             top:36px;
+             right:20px;
+         }
     }
 }
 .btn{
@@ -137,10 +205,21 @@ $white: #FFFFFF;
     border:none;
     padding: 4px 16px;
     height:45px;
-    width:25%;
-    max-width: 160px;
-    min-width: 120px;
+
+    width: 160px;
     font-size: 18px;
+    cursor: pointer;
+    transition: background .2s ease-in-out, color .2s  ease-in-out;
+
+    &:hover, &:focus, &:active{
+        background-color: $white;
+        color:$purple;
+        border:2px solid $purple;
+    }
+
+    @media(max-width: 1000px){
+        margin-bottom: 25px;
+    }
 }
 .footer{
     text-align: center;
