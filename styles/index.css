@@ -1,0 +1,146 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.purple-bg {
+  background-color: #311B92;
+}
+
+.purple-color {
+  color: #311B92;
+}
+
+.white-color {
+  color: #FFFFFF;
+}
+
+.starting-section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  padding-left: calc(20px + 4vw);
+}
+
+.logo-wrapper {
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  display: inline-block;
+  padding: calc(.7vw + 10px);
+}
+
+.newsletter-block {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 21.5% 39% 21.5%;
+      grid-template-columns: 21.5% 39% 21.5%;
+  -webkit-column-gap: 9%;
+          column-gap: 9%;
+  margin-top: 5vw;
+  padding: 0 8vw;
+}
+
+.newsletter-block__images img {
+  display: block;
+}
+
+.newsletter-block__images img.left {
+  margin-left: auto;
+}
+
+.newsletter-block__images img.right {
+  margin-right: auto;
+}
+
+.newsletter-block__newsletter h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0px;
+  line-height: 5rem;
+}
+
+.newsletter-block__newsletter p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.line {
+  height: 4px;
+  width: 100%;
+}
+
+.input-and-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input {
+  background: #EDEDED 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 20px;
+  height: 45px;
+  width: 50%;
+  min-width: 250px;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.input::-webkit-input-placeholder {
+  color: #C7C7C7;
+}
+
+.input:-ms-input-placeholder {
+  color: #C7C7C7;
+}
+
+.input::-ms-input-placeholder {
+  color: #C7C7C7;
+}
+
+.input::placeholder {
+  color: #C7C7C7;
+}
+
+.btn {
+  border-radius: 8px;
+  border: none;
+  padding: 4px 16px;
+  height: 45px;
+  width: 25%;
+  max-width: 160px;
+  min-width: 120px;
+  font-size: 18px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer p:nth-of-type(2) {
+  font-size: 14px;
+  color: #BEBEBE;
+}
+
+.icons img:first-of-type {
+  margin-right: 15px;
+}
+/*# sourceMappingURL=index.css.map */

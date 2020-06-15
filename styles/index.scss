@@ -1,0 +1,123 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+$purple:#311B92;
+$white: #FFFFFF;
+
+.purple-bg{
+    background-color: $purple;
+}
+.purple-color{
+    color:$purple
+}
+.white-color{
+    color:$white;
+}
+
+
+.starting-section{
+    width:100%;
+    min-height: 100vh;
+}
+
+.header{
+    width:100%;
+    padding-left: calc(20px + 4vw);
+}
+.logo-wrapper{
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    display:inline-block;
+    padding:calc(.7vw + 10px); 
+}
+.newsletter-block{
+    align-items: center;
+    display: grid;
+    width:100%;
+    grid-template-columns:21.5% 39% 21.5%;
+    column-gap: 9%;
+    margin-top: 5vw;
+    padding: 0 8vw;
+
+    &__images{
+        img{
+            display: block;
+
+            &.left{
+                margin-left: auto;
+            }
+            &.right{
+                margin-right: auto;
+            }
+        }
+    }
+
+    &__newsletter{
+        h1{
+            font-size: 4rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-align: center;
+            margin: 0px;
+            line-height: 5rem;
+        }
+        p{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+}
+.line{
+    height:4px;
+    width:100%;
+}
+.input-and-button{
+    display: flex;
+    justify-content: center;
+}
+.input{
+    background: #EDEDED 0% 0% no-repeat padding-box;
+    border:none;
+    border-radius: 8px;
+    padding: 4px 20px;
+    height:45px;
+    width: 50%;
+    
+    min-width: 250px;
+    margin-right: 15px;
+    font-size: 18px;
+
+    &::placeholder{
+        color: #C7C7C7;
+    }
+}
+.btn{
+    border-radius: 8px;
+    border:none;
+    padding: 4px 16px;
+    height:45px;
+    width:25%;
+    max-width: 160px;
+    min-width: 120px;
+    font-size: 18px;
+}
+.footer{
+    text-align: center;
+
+    p{
+        &:nth-of-type(2){
+            font-size: 14px;
+            color: #BEBEBE;
+        }
+    }
+}
+.icons{
+    img:first-of-type{
+        margin-right: 15px;
+    }
+}
