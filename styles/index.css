@@ -311,4 +311,58 @@ button, input {
 .icons img:first-of-type {
   margin-right: 15px;
 }
+
+@-webkit-keyframes fadeInFadeOut {
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInFadeOut {
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.message-sent {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #311B92;
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  width: 200px;
+  border-bottom-left-radius: 15px;
+  opacity: 0;
+}
+
+.fade-in-fade-out {
+  -webkit-animation-name: fadeInFadeOut;
+          animation-name: fadeInFadeOut;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
 /*# sourceMappingURL=index.css.map */

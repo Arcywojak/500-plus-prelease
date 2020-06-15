@@ -261,3 +261,36 @@ $white: #FFFFFF;
         margin-right: 15px;
     }
 }
+
+@keyframes fadeInFadeOut{
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.message-sent{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $purple;
+    border-left:2px solid $white;
+    border-bottom:2px solid $white;
+    color:$white;
+    top:0;
+    right:0;
+    padding: 15px;
+    width:200px;
+    border-bottom-left-radius: 15px ;
+    opacity: 0;
+}
+.fade-in-fade-out{
+    animation-name: fadeInFadeOut;
+    animation-duration: 6s;
+}
