@@ -354,9 +354,11 @@ button, input {
   top: 0;
   right: 0;
   padding: 15px;
-  width: 200px;
+  width: 300px;
+  height: 100px;
   border-bottom-left-radius: 15px;
   opacity: 0;
+  z-index: 2;
 }
 
 .fade-in-fade-out {

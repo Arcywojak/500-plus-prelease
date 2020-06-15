@@ -22,6 +22,7 @@ button, input{
 
 $purple:#311B92;
 $white: #FFFFFF;
+$green: #8bc34a;
 
 .purple-bg{
     background-color: $purple;
@@ -232,9 +233,9 @@ $white: #FFFFFF;
     }
 
     &.submitted{
-        color: #8bc34a;
+        color: $green;
         background-color: $white;
-        border:2px solid #8bc34a;
+        border:2px solid $green;
 
         .unsubmitted-i{
             display: none;
@@ -286,9 +287,11 @@ $white: #FFFFFF;
     top:0;
     right:0;
     padding: 15px;
-    width:200px;
+    width:300px;
+    height:100px;
     border-bottom-left-radius: 15px ;
     opacity: 0;
+    z-index: 2;
 }
 .fade-in-fade-out{
     animation-name: fadeInFadeOut;

@@ -8,6 +8,7 @@ newsletterForm.addEventListener("submit", (e) => {
     const messageSentBlock = document.querySelector(".message-sent");
 
     messageSentBlock.classList.add("fade-in-fade-out");
+    newsletterButton.disabled = true;
 
     newsletterButton.classList.add("submitted");    
 })
