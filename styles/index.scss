@@ -4,6 +4,12 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    height:100vh;
+    overflow: hidden;
+}
+
+.container{
+    transition: transform 2s ease-in-out;
 }
 
 // PREVENT FROM MARKING
