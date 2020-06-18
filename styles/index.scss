@@ -50,7 +50,7 @@ $green: #8bc34a;
     display: flex;
     flex-direction: column;
     width:100%;
-    
+    padding: 120px 8% 120px 8%;
     height: 100vh;
 
 
@@ -67,7 +67,7 @@ $green: #8bc34a;
         align-items: center;
         column-gap: 16%;
         height: 100vh;
-        padding: 8%;
+        
 
         .line{
             height: 8px;
@@ -76,8 +76,26 @@ $green: #8bc34a;
     }
 
     @media(max-width: 1000px){
-        min-height: 100vh;
-        height:auto;
+       // min-height: 100vh;
+        
+
+        padding: 0;
+
+        &.first{
+            padding-top: 90px;
+            height:auto;
+        }
+
+        &.second, &.third{
+            grid-template-columns: 100%;
+            column-gap: 0;
+            height:auto;
+            padding: 40px 5vw 0;
+
+            p{
+                font-size: 18px;
+            }
+        }
     }
 }
 
@@ -170,6 +188,10 @@ $green: #8bc34a;
             }
         }
     }
+
+    .big-h1{
+        text-align:center;
+    }
 }
 
 .top{
@@ -196,18 +218,33 @@ $green: #8bc34a;
 
         text-align: left;
         margin: 0px;
-        line-height: 65px;    
+        line-height: 65px;   
+        
+        @media(max-width: 1000px){
+            text-align: center;
+
+            font-size: 2rem;
+            line-height: 45px;
+        }
 }
 
 .small-h4{
     margin: 0;
     font-weight: 400;
     font-size: 18px;
+
+    @media(max-width: 1000px){
+        text-align: center;
+    }
 }
 
 .great-p{
     font-weight: 700;
     font-size: 18px;
+
+    @media(max-width: 1000px){
+        font-size: 20px;
+    }
 }
 
 .line{
@@ -320,11 +357,20 @@ $green: #8bc34a;
             color: #BEBEBE;
         }
     }
+
+    @media(max-width: 1000px){
+        margin-top: 65px;
+        position: relative;
+    }
 }
 .icons{
+    margin-top: 8px;
     img:first-of-type{
         margin-right: 15px;
     }
+}
+.footer-a{
+    margin-right: 5px;
 }
 
 @keyframes fadeInFadeOut{
@@ -388,7 +434,7 @@ $green: #8bc34a;
 
         img{
             width:100%;
-
+            max-height: 100%;
 
 
 
@@ -433,7 +479,53 @@ $green: #8bc34a;
     }
 }
 .interior-img{
+
     position: absolute;
+
+    &.nr1{
+        left:14%;
+        top:5%;
+    }
+    &.nr2{
+        left:46%;
+        top:10%;
+    }
+    &.nr3{
+        left:14%;
+        top:45%;
+    }
+    &.nr4{
+        left:46%;
+        top:50%;
+    }
+
+}
+
+img.interior-img.card {
+    width:30%;
+}
+
+.big-screen{
+    @media(max-width: 1000px){
+        display: none;
+    }
+}
+.small-screen{
+    display: none;
+
+    @media(max-width: 1000px){
+        display: block;
+    }
+}
+
+img.card.small-screen{
+
+    @media(max-width: 1000px){
+        width:90%;
+        max-width: 300px;
+        display: inline-block;
+    }
+    
 }
 
 /////////////////////

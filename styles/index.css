@@ -62,6 +62,7 @@ button, input {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  padding: 120px 8% 120px 8%;
   height: 100vh;
 }
 
@@ -86,7 +87,6 @@ button, input {
   -webkit-column-gap: 16%;
           column-gap: 16%;
   height: 100vh;
-  padding: 8%;
 }
 
 .full-screen-section.second .line, .full-screen-section.third .line {
@@ -96,8 +96,22 @@ button, input {
 
 @media (max-width: 1000px) {
   .full-screen-section {
-    min-height: 100vh;
+    padding: 0;
+  }
+  .full-screen-section.first {
+    padding-top: 90px;
     height: auto;
+  }
+  .full-screen-section.second, .full-screen-section.third {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    height: auto;
+    padding: 40px 5vw 0;
+  }
+  .full-screen-section.second p, .full-screen-section.third p {
+    font-size: 18px;
   }
 }
 
@@ -199,6 +213,10 @@ button, input {
   }
 }
 
+.newsletter-block .big-h1 {
+  text-align: center;
+}
+
 .top1 {
   top: 0;
 }
@@ -227,15 +245,35 @@ button, input {
   line-height: 65px;
 }
 
+@media (max-width: 1000px) {
+  .big-h1 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 45px;
+  }
+}
+
 .small-h4 {
   margin: 0;
   font-weight: 400;
   font-size: 18px;
 }
 
+@media (max-width: 1000px) {
+  .small-h4 {
+    text-align: center;
+  }
+}
+
 .great-p {
   font-weight: 700;
   font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+  .great-p {
+    font-size: 20px;
+  }
 }
 
 .line {
@@ -382,8 +420,23 @@ button, input {
   color: #BEBEBE;
 }
 
+@media (max-width: 1000px) {
+  .footer {
+    margin-top: 65px;
+    position: relative;
+  }
+}
+
+.icons {
+  margin-top: 8px;
+}
+
 .icons img:first-of-type {
   margin-right: 15px;
+}
+
+.footer-a {
+  margin-right: 5px;
 }
 
 @-webkit-keyframes fadeInFadeOut {
@@ -474,6 +527,7 @@ button, input {
 
 .subsection.with-img img {
   width: 100%;
+  max-height: 100%;
   /*
             &.fixed-img{
                 width:35.28%;
@@ -520,5 +574,53 @@ button, input {
 
 .interior-img {
   position: absolute;
+}
+
+.interior-img.nr1 {
+  left: 14%;
+  top: 5%;
+}
+
+.interior-img.nr2 {
+  left: 46%;
+  top: 10%;
+}
+
+.interior-img.nr3 {
+  left: 14%;
+  top: 45%;
+}
+
+.interior-img.nr4 {
+  left: 46%;
+  top: 50%;
+}
+
+img.interior-img.card {
+  width: 30%;
+}
+
+@media (max-width: 1000px) {
+  .big-screen {
+    display: none;
+  }
+}
+
+.small-screen {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .small-screen {
+    display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  img.card.small-screen {
+    width: 90%;
+    max-width: 300px;
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=index.css.map */
