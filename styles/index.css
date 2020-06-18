@@ -10,11 +10,18 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 1000px) {
+  body {
+    height: auto;
+    overflow: auto;
+  }
+}
+
 .container {
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  transition: -webkit-transform 2s ease-in-out;
-  transition: transform 2s ease-in-out;
-  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
 img {
@@ -55,7 +62,28 @@ button, input {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+}
+
+.full-screen-section.first, .full-screen-section.third {
+  padding-top: 115px;
+  padding-bottom: 145px;
+}
+
+.full-screen-section.first {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .full-screen-section {
+    min-height: 100vh;
+    height: auto;
+  }
 }
 
 .header {
@@ -109,7 +137,6 @@ button, input {
       grid-template-columns: 21.5% 39% 21.5%;
   -webkit-column-gap: 9%;
           column-gap: 9%;
-  margin-top: 5vw;
   padding: 0 8vw;
 }
 
@@ -305,6 +332,7 @@ button, input {
   color: #8bc34a;
   background-color: #FFFFFF;
   border: 2px solid #8bc34a;
+  cursor: initial;
 }
 
 .btn.submitted .unsubmitted-i {
@@ -317,8 +345,12 @@ button, input {
 }
 
 .footer {
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
-  margin-top: auto;
 }
 
 .footer p:nth-of-type(2) {
@@ -376,7 +408,7 @@ button, input {
   height: 100px;
   border-bottom-left-radius: 15px;
   opacity: 0;
-  z-index: 2;
+  z-index: 5;
 }
 
 .fade-in-fade-out {
@@ -395,7 +427,7 @@ button, input {
       grid-template-columns: 42% 42%;
   -webkit-column-gap: 16%;
           column-gap: 16%;
-  min-height: 100vh;
+  height: 100vh;
   padding: 8%;
 }
 

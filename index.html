@@ -8,13 +8,20 @@
     <title>500Plus</title>
 </head>
 <body>
+
+    <header class="header">
+        <div class="logo-wrapper purple-bg">
+            <img src="./assets/logo-white.png" alt="logo">
+        </div>
+    </header>
+
+    <div class="message-sent">
+        Wiadomość E-Mail wysłana!
+    </div>
+
     <div class="container">
     <div class="full-screen-section first">
-        <header class="header">
-            <div class="logo-wrapper purple-bg">
-                <img src="./assets/logo-white.png" alt="logo">
-            </div>
-        </header>
+        
         <div class="newsletter-block">
             <div class="newsletter-block__images">
                 <img class="left top1" src="./assets/1.svg" alt="1">
@@ -44,9 +51,6 @@
                         GOTOWE<i class="unsubmitted-i">!</i><i class="fas fa-check-circle submitted-i"></i>
                     </button>
                 </form>
-                <div class="message-sent">
-                    Wiadomość E-Mail wysłana!
-                </div>
             </main>
             <div class="newsletter-block__images">
                 <img class="right top1" src="./assets/6.svg" alt="1">
@@ -61,12 +65,17 @@
     <div class="full-screen-section second">
         <div class="second-section first">
             <div class="subsection-second">
+                <h4 class="small-h4 purple-color">
+                    Oszczędzaj, otrzymuj i promuj.
+                </h4>
                 <h1 class="big-h1">
                     Co zyskujesz korzystając z naszej platformy?
                 </h1>
     
                 <div class="line purple-bg"></div>
-    
+                <div class="great-p">
+                    Zakupy online dla całej TWOJEJ rodziny na TWOICH zasadach.
+                </div>
                 <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
                     sed diam nonumy eirmod tempor invidunt ut labore et dolore
@@ -86,12 +95,18 @@
         </div>
         <div class="second-section second">
             <div class="subsection-second">
+                <h4 class="small-h4 purple-color">
+                    Zakupy w internecie na nowo.
+                </h4>
                 <h1 class="big-h1">
                     Przygotuj się na nowy wymiar zakupów online!
                 </h1>
     
                 <div class="line purple-bg"></div>
-    
+                <div class="great-p">
+                    Wierzymy że każdy konsument ma indywidualne potrzeby i zasługuje na specjalne podejście.
+                </div>
+
                 <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
                     sed diam nonumy eirmod tempor invidunt ut labore et dolore
@@ -112,6 +127,8 @@
     <div class="full-screen-section third">
         <h1>AgSAGASG</h1>
     </div>
+
+    </div>
     <footer class="footer">
         <p class="purple-color">© 2020 - CoZa500Plus.pl</p>
         <p>kontakt@coza500plus.pl</p>
@@ -127,8 +144,8 @@
         </div>
     </footer>
 
-
-    <script src="scripts/index.js"></script>
-    </div>
+    <script src="scripts/index.js" type="module"></script>
+    <script src="scripts/scrollBehaviour.js" type="module"></script>
+    <script src="scripts/handleForm.js" type="module"></script>
 </body>
 </html>
