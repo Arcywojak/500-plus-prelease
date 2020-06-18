@@ -52,16 +52,27 @@ $green: #8bc34a;
     width:100%;
     
     height: 100vh;
-   
-    &.first, &.third{
-        padding-top:115px;
-        padding-bottom: 145px;
-    
-    }
+
 
     &.first{
         align-items: center;
         justify-content: center;
+    }
+
+
+    &.second, &.third{
+        display: grid;
+        width:100%;
+        grid-template-columns: 42% 42%;
+        align-items: center;
+        column-gap: 16%;
+        height: 100vh;
+        padding: 8%;
+
+        .line{
+            height: 8px;
+            margin: 25px 0;
+        }
     }
 
     @media(max-width: 1000px){
@@ -75,7 +86,6 @@ $green: #8bc34a;
     z-index: 1;
     width:100%;
     padding-left: 5vw;
-    background-color: $white;
 
     @media(max-width: 1000px){
         text-align: center;
@@ -181,12 +191,23 @@ $green: #8bc34a;
 }
 
 .big-h1{   
-        font-size: 4rem;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+
+        text-align: left;
         margin: 0px;
-        line-height: 5rem;    
+        line-height: 65px;    
+}
+
+.small-h4{
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.great-p{
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .line{
@@ -359,7 +380,7 @@ $green: #8bc34a;
         margin: 25px 0;
     }
 }
-.subsection-second{
+.subsection{
     position: relative;
 
     &.with-img{
@@ -367,8 +388,13 @@ $green: #8bc34a;
 
         img{
             width:100%;
+
+
+
+
            
 
+/*
             &.fixed-img{
                 width:35.28%;
                 position: fixed;
@@ -376,7 +402,7 @@ $green: #8bc34a;
                 left:56.72%;
             }
 
-         /*   &.beside-second-parent{
+            &.beside-second-parent{
                 position: absolute;
                 top:calc(100% + 16vh);
                 left:0%;
@@ -384,6 +410,30 @@ $green: #8bc34a;
             
         }
     }
+}
+
+.small-icon-with-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+
+    .icon{
+        margin-right: 15px;
+       
+        img{
+            height:45px;
+        }
+    }
+
+    .text{
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+.interior-img{
+    position: absolute;
 }
 
 /////////////////////

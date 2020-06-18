@@ -2,13 +2,15 @@
 const container = document.querySelector(".container");
 
 const fullScreenSectionFirst = document.querySelector(".full-screen-section.first");
+const fullScreenSectionSecond = document.querySelector(".full-screen-section.second");
 const fullScreenSectionThird = document.querySelector(".full-screen-section.third");
+//const fullScreenSectionThird = document.querySelector(".full-screen-section.third");
 
 const trackingImg = document.querySelector(".tracking-img");
 
-const parentFirstOfTrackingImg = document.querySelector(".subsection-second.with-img.first");
-const parentSecondOfTrackingImg = document.querySelector(".subsection-second.with-img.second");
-const img = parentFirstOfTrackingImg.childNodes[1];
+//const parentFirstOfTrackingImg = document.querySelector(".subsection-second.with-img.first");
+//const parentSecondOfTrackingImg = document.querySelector(".subsection-second.with-img.second");
+//const img = parentFirstOfTrackingImg.childNodes[1];
 
 
 /* IF USER CAN SCROLL, HOW MUCH AND WHERE */
@@ -31,9 +33,9 @@ window.addEventListener("load", () => {
 /* SCROLL POINTS */
 const scrollPoints = [
     fullScreenSectionFirst,
-    parentFirstOfTrackingImg,
-    parentSecondOfTrackingImg,
-    fullScreenSectionThird
+    fullScreenSectionSecond,
+    fullScreenSectionThird//,
+    //fullScreenSectionThird
 ];
 ////////////////////////////
 
@@ -104,7 +106,7 @@ const scrollToTheText = (e) => {
         isScrolling = true;
 
         if(e.deltaY > 0){ // IT MEAN SCROLL DOWN
-            if(currentScrollIndex < 3){
+            if(currentScrollIndex < 2){
 
                 currentScrollValue -= window.innerHeight;
 
