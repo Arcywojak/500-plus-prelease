@@ -373,6 +373,11 @@ $green: #8bc34a;
     margin-right: 5px;
 }
 
+img.scroll{
+    transform: translateY(-80px);
+    width:50px;
+}
+
 @keyframes fadeInFadeOut{
     30%{
         opacity: 1;

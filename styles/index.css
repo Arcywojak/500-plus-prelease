@@ -439,6 +439,12 @@ button, input {
   margin-right: 5px;
 }
 
+img.scroll {
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+  width: 50px;
+}
+
 @-webkit-keyframes fadeInFadeOut {
   30% {
     opacity: 1;
