@@ -1,0 +1,94 @@
+$purple:#311B92;
+$white: #FFFFFF;
+$green: #8bc34a;
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+// PREVENT FROM MARKING
+img{
+    -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none;
+}
+button, input{
+   outline: none;
+}
+/////////////////////////
+
+.line{
+   height:4px;
+   width:100%;
+}
+
+.big-screen{
+   @media(max-width: 1000px){
+       display: none;
+   }
+}
+
+.small-h4{
+   margin: 0;
+   font-weight: 400;
+   font-size: 18px;
+
+   @media(max-width: 1000px){
+       text-align: center;
+   }
+}
+
+.small-screen{
+   display: none;
+
+   @media(max-width: 1000px){
+       display: block;
+   }
+}
+
+.great-p{
+   font-weight: 700;
+   font-size: 18px;
+
+   @media(max-width: 1000px){
+       font-size: 20px;
+   }
+}
+
+.purple-bg{
+   background-color: $purple;
+}
+.purple-color{
+   color:$purple
+}
+.white-color{
+   color:$white;
+}
+
+.big-h1{   
+   font-size: 3rem;
+   font-weight: 700;
+
+   text-align: left;
+   margin: 0px;
+   line-height: 65px;   
+
+  @media(max-width:1400px){
+      font-size: 2rem;
+      line-height: 45px; 
+  }
+   
+   @media(max-width: 1000px){
+       text-align: center;
+
+       font-size: 2rem;
+       line-height: 45px;
+   }
+}

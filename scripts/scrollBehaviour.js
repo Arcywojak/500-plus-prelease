@@ -4,13 +4,8 @@ const container = document.querySelector(".container");
 const fullScreenSectionFirst = document.querySelector(".full-screen-section.first");
 const fullScreenSectionSecond = document.querySelector(".full-screen-section.second");
 const fullScreenSectionThird = document.querySelector(".full-screen-section.third");
-//const fullScreenSectionThird = document.querySelector(".full-screen-section.third");
 
 const trackingImg = document.querySelector(".tracking-img");
-
-//const parentFirstOfTrackingImg = document.querySelector(".subsection-second.with-img.first");
-//const parentSecondOfTrackingImg = document.querySelector(".subsection-second.with-img.second");
-//const img = parentFirstOfTrackingImg.childNodes[1];
 
 
 /* IF USER CAN SCROLL, HOW MUCH AND WHERE */
@@ -23,9 +18,24 @@ window.addEventListener("load", () => {
      currentScrollValue = 0;
      currentScrollIndex = 0;
      isScrolling = false;
+
+
+    console.log("translated 0")
+
+    container.style.webkitTransform = 
+    `translateY(0px)`;
+
+    container.style.MozTransform = 
+    `translateY(0px)`;
+
+    container.style.msTransform = 
+    `translateY(0px)`;
+
+    container.style.OTransform = 
+    `translateY(0px)`;
+
     container.style.transform = 
-    `translateY(${currentScrollIndex*window.innerHeight}px)`;
-    console.log("LOADED")
+    `translateY(0px)`;
 })
 
 
@@ -34,69 +44,10 @@ window.addEventListener("load", () => {
 const scrollPoints = [
     fullScreenSectionFirst,
     fullScreenSectionSecond,
-    fullScreenSectionThird//,
-    //fullScreenSectionThird
+    fullScreenSectionThird
 ];
 ////////////////////////////
 
-
-
-
-const scrollTrackingImg = () => {
-
-    /* ATTACH IMG TO SECOND SUBSECTION  */
-    if(parentSecondOfTrackingImg.getBoundingClientRect().top - 100 <= 20){
-
-        trackingImg.classList.remove("fixed-img");
-
-        if(parentFirstOfTrackingImg?.childNodes[1]?.classList?.contains("tracking-img") ||
-           parentFirstOfTrackingImg?.childNodes[2]?.classList?.contains("tracking-img")
-        ){
-
-            const img = parentFirstOfTrackingImg.childNodes[1];
-
-            parentFirstOfTrackingImg.removeChild(img);
-            parentSecondOfTrackingImg.appendChild(img);
-
-        }    
-    }
-    //////////////////////////////////////
-
-    /* ATTACH IMG BETWEEN SECTIONS  */
-    else if(parentFirstOfTrackingImg.getBoundingClientRect().top - 100 <= 20){
-
-     /*   if(!parentFirstOfTrackingImg?.childNodes[1]?.classList?.contains("tracking-img")){
-
-            const img = parentSecondOfTrackingImg.childNodes[1];
-
-            parentSecondOfTrackingImg.removeChild(img);
-            parentFirstOfTrackingImg.appendChild(img);
-
-        }*/
-
-        trackingImg.classList.add("fixed-img");      
-
-    }
-    //////////////////////////////////////
-
-    /* ATTACH IMG TO FIRST SUBSECTION */
-    else if(parentFirstOfTrackingImg.getBoundingClientRect().top - 100 > 20) {
-
-        trackingImg.classList.remove("fixed-img");
-
-        if(!parentFirstOfTrackingImg?.childNodes[1]?.classList?.contains("tracking-img") &&
-           !parentFirstOfTrackingImg?.childNodes[2]?.classList?.contains("tracking-img")
-        ){
-
-            const img = parentSecondOfTrackingImg.childNodes[1];         
-
-            parentSecondOfTrackingImg.removeChild(img);
-            parentFirstOfTrackingImg.appendChild(img);
-
-        }
-       
-    }
-}
 
 const scrollToTheText = (e) => {
 
@@ -126,8 +77,6 @@ const scrollToTheText = (e) => {
 
             container.style.transform = 
             `translateY(${currentScrollIndex * (-window.innerHeight)}px)`;
-
-            console.log(currentScrollIndex * (-window.innerHeight))
 
             }
         } else if (e.deltaY < 0) {
@@ -170,7 +119,6 @@ const scrollToTheText = (e) => {
 document.addEventListener("wheel", (e) => {
 
     if(window.innerWidth > 1000){
-        //   scrollTrackingImg();
         scrollToTheText(e);
     }
  

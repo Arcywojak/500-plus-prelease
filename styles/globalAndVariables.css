@@ -1,0 +1,106 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+button, input {
+  outline: none;
+}
+
+.line {
+  height: 4px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .big-screen {
+    display: none;
+  }
+}
+
+.small-h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+  .small-h4 {
+    text-align: center;
+  }
+}
+
+.small-screen {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .small-screen {
+    display: block;
+  }
+}
+
+.great-p {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+  .great-p {
+    font-size: 20px;
+  }
+}
+
+.purple-bg {
+  background-color: #311B92;
+}
+
+.purple-color {
+  color: #311B92;
+}
+
+.white-color {
+  color: #FFFFFF;
+}
+
+.big-h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: left;
+  margin: 0px;
+  line-height: 65px;
+}
+
+@media (max-width: 1400px) {
+  .big-h1 {
+    font-size: 2rem;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .big-h1 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 45px;
+  }
+}
+/*# sourceMappingURL=globalAndVariables.css.map */

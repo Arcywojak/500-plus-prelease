@@ -1,0 +1,50 @@
+@import 'globalAndVariables.scss';
+
+.footer{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 4vw;
+    background-color: #fefefe;
+    border-top: 1px solid $purple;
+    flex-direction: row;
+    z-index: 3;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .first{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        img{
+            margin-right: 12px;
+            width:40px;
+        }
+    }
+
+    p{
+        &:nth-of-type(2){
+            font-size: 14px;
+            color: #BEBEBE;
+        }
+    }
+
+    @media(max-width: 1000px){
+        margin-top: 65px;
+        position: relative;
+    }
+}
+.icons{
+    margin-top: 8px;
+    img:first-of-type{
+        margin-right: 15px;
+    }
+}
+.footer-a{
+    margin-right: 5px;
+}
