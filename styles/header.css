@@ -30,6 +30,34 @@ button, input {
   width: 100%;
 }
 
+@media (max-width: 1000px) {
+  .big-screen {
+    display: none;
+  }
+}
+
+.small-h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+  .small-h4 {
+    text-align: center;
+  }
+}
+
+.small-screen {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .small-screen {
+    display: block;
+  }
+}
+
 .great-p {
   font-weight: 700;
   font-size: 18px;
