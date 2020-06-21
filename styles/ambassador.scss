@@ -1,0 +1,35 @@
+@import 'globalAndVariables.scss';
+
+.button-with-big-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width:1300px){
+        flex-direction: column-reverse;
+    }
+    
+    button{
+        width:150px;
+        background-color: transparent;
+        height:40px;
+        border:2px solid $purple;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+
+        @media(max-width:1300px){
+            margin:40px;
+        }
+    }
+
+    .text{
+        color: #37269D;
+        font-weight: 600;
+        font-size: 40px;
+
+        @media(max-width:400px){
+            font-size:30px;
+        }
+    }
+}
