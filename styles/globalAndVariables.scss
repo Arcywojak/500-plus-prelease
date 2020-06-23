@@ -11,6 +11,29 @@ body{
    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
+
+.redirect-block{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: $purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width:90%;
+        max-width: 400px;
+    }
+
+    transition: transform 1s ease-in-out;
+
+    &.hidden-up{
+        transform: translateY(100%);
+    }
+}
+
 // PREVENT FROM MARKING
 img{
     -webkit-touch-callout: none; /* iOS Safari */

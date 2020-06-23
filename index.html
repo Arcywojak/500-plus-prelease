@@ -31,6 +31,14 @@
 
 <div class="container-wrapper">
 
+    <!-- BLOCK ACTIVATED DURING MOUNTING AND UNMOUNTING SUBPAGE -->
+
+        <div class="redirect-block">
+            <img src="./assets/logo-white.png" alt="">
+        </div>
+
+    <!------------------------------------------------------------>
+
     <div class="container">
     <section class="full-screen-section first">
         
@@ -62,7 +70,11 @@
                     <button class="btn purple-bg white-color newsletter-btn">
                         GOTOWE<i class="unsubmitted-i">!</i><i class="fas fa-check-circle submitted-i"></i>
                     </button>
+                    
                 </form>
+                <button class="redirect" id="forMedia.html">
+                    go for media
+                </button>
             </main>
             <div class="newsletter-block__images">
                 <img class="right top1" src="./assets/6.svg" alt="1">
@@ -216,7 +228,7 @@
         
     </footer>
 
-    <script src="./scripts/index.js" type="module"></script>
+    <script src="./scripts/redirectAnimation.js" type="module"></script>
     <script src="./scripts/scrollBehaviour.js" type="module"></script>
     <script src="./scripts/handleForm.js" type="module"></script>
 </body>

@@ -76,7 +76,7 @@ button, input {
         grid-template-columns: 100%;
     -webkit-column-gap: 0;
             column-gap: 0;
-    padding: 100px 4vw 100px;
+    padding: 100px 4vw 20px;
     height: auto;
   }
 }

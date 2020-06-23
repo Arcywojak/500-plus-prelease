@@ -19,9 +19,6 @@ window.addEventListener("load", () => {
      currentScrollIndex = 0;
      isScrolling = false;
 
-
-    console.log("translated 0")
-
     container.style.webkitTransform = 
     `translateY(0px)`;
 
