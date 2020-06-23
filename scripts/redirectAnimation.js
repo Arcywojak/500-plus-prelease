@@ -1,22 +1,18 @@
-const media = document.querySelector(".redirect");
 
-const redirectBlock = document.querySelector(".redirect-block")
+const redirectBlock = document.querySelector(".redirect-block");
 
+// REMOVE REDIRECT BLOCK WHEN WEBSITE IS LOADED
 setTimeout(() => {
     redirectBlock.classList.add("hidden-up")
 }, 500)
+///////////////////////////////////////////////
 
-
-
-const toggleRedirectBlock = () => {
-    redirectBlock.classList.toggle("hidden-up");
-}
 
 const redirect = (e) => {
+
     const path = e.target.id;
 
-    toggleRedirectBlock();
-   
+    redirectBlock.classList.toggle("hidden-up");
 
     setTimeout( () => {
         window.location.pathname = `/${path}`
@@ -25,6 +21,26 @@ const redirect = (e) => {
 }
 
 
-media.addEventListener("click", (e) => {
-    redirect(e)
+const logo = document.querySelector(".logo-wrapper");
+
+logo.addEventListener("click", (e) => {
+
+    redirect(e);
+
 })
+
+const footerA = document.querySelectorAll(".footer-a");
+
+console.log(footerA)
+
+footerA.forEach( (a) => {
+
+    a.addEventListener("click", (e) => {
+
+        console.log("E")
+
+        redirect(e);
+
+    })
+})
+

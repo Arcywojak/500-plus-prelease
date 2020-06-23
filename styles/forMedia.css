@@ -24,6 +24,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transition: -webkit-transform 1s ease-in-out;
   transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
@@ -33,6 +37,12 @@ body {
 .redirect-block img {
   width: 90%;
   max-width: 400px;
+}
+
+.redirect-block h1 {
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 .redirect-block.hidden-up {
@@ -206,6 +216,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transition: -webkit-transform 1s ease-in-out;
   transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
@@ -215,6 +229,12 @@ body {
 .redirect-block img {
   width: 90%;
   max-width: 400px;
+}
+
+.redirect-block h1 {
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 .redirect-block.hidden-up {
@@ -427,6 +447,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transition: -webkit-transform 1s ease-in-out;
   transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
@@ -436,6 +460,12 @@ body {
 .redirect-block img {
   width: 90%;
   max-width: 400px;
+}
+
+.redirect-block h1 {
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 .redirect-block.hidden-up {
@@ -648,6 +678,9 @@ button, input {
 
 .footer-a {
   margin-right: 5px;
+  text-decoration: underline;
+  color: #311B92;
+  cursor: pointer;
 }
 
 .for-media {
