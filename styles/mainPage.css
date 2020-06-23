@@ -9,6 +9,14 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+@media (min-width: 1300px) {
+  body {
+    background-image: url("../assets/backgroundStain.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
 .redirect-block {
   position: fixed;
   z-index: 99999;

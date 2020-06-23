@@ -1,0 +1,39 @@
+@import 'globalAndVariables.scss';
+
+img.interior-img.card {
+    width:25%;
+}
+
+.interior-img{
+
+    position: absolute;
+
+    &.nr1{
+        left:14%;
+        top:5%;
+    }
+    &.nr2{
+        left:46%;
+        top:10%;
+    }
+    &.nr3{
+        left:14%;
+        top:45%;
+    }
+    &.nr4{
+        left:46%;
+        top:50%;
+    }
+
+}
+
+img.card.small-screen{
+
+    @media(max-width: 1300px){
+        width:90%;
+        max-width: 300px;
+        display: inline-block;
+    }
+    
+}
+

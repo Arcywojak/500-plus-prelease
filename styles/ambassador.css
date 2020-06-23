@@ -190,6 +190,14 @@ button, input {
   }
 }
 
+@media (min-width: 1300px) {
+  html {
+    background-image: url("../assets/backgroundStain.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
 .button-with-big-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,5 +245,9 @@ button, input {
   .button-with-big-text .text {
     font-size: 30px;
   }
+}
+
+.with-img {
+  text-align: center;
 }
 /*# sourceMappingURL=ambassador.css.map */

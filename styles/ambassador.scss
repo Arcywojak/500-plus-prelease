@@ -1,5 +1,16 @@
 @import 'globalAndVariables.scss';
 
+html{
+
+
+    @media(min-width: 1300px){
+        background-image: url('../assets/backgroundStain.png');
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+  
+}
+
 .button-with-big-text{
     display: flex;
     align-items: center;
@@ -32,4 +43,8 @@
             font-size:30px;
         }
     }
+}
+
+.with-img{
+    text-align: center;
 }

@@ -197,4 +197,40 @@ button, input {
     line-height: 45px;
   }
 }
-/*# sourceMappingURL=globalAndVariables.css.map */
+
+img.interior-img.card {
+  width: 25%;
+}
+
+.interior-img {
+  position: absolute;
+}
+
+.interior-img.nr1 {
+  left: 14%;
+  top: 5%;
+}
+
+.interior-img.nr2 {
+  left: 46%;
+  top: 10%;
+}
+
+.interior-img.nr3 {
+  left: 14%;
+  top: 45%;
+}
+
+.interior-img.nr4 {
+  left: 46%;
+  top: 50%;
+}
+
+@media (max-width: 1300px) {
+  img.card.small-screen {
+    width: 90%;
+    max-width: 300px;
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=join.css.map */

@@ -9,7 +9,14 @@ $green: #8bc34a;
 body{
    margin: 0;
    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
+   font-family: 'Poppins', sans-serif;
+
+   @media(min-width: 1300px){
+    background-image: url('../assets/backgroundStain.png');
+    background-repeat: no-repeat;
+    z-index: -1;
+   }
+   
 }
 
 .redirect-block{
