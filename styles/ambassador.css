@@ -78,6 +78,12 @@ button, input {
   }
 }
 
+@media (max-width: 1300px) {
+  .big-screen-1300 {
+    display: none;
+  }
+}
+
 .two-section-grid {
   display: -ms-grid;
   display: grid;
@@ -195,6 +201,18 @@ button, input {
     background-image: url("../assets/backgroundStain.png");
     background-repeat: no-repeat;
     z-index: -1;
+  }
+}
+
+@media (max-width: 1100px) {
+  body {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding-bottom: 0;
   }
 }
 

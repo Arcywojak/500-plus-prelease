@@ -72,7 +72,7 @@ button, input {
   width: 100%;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   .big-screen {
     display: none;
   }
@@ -138,7 +138,7 @@ button, input {
   display: none;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   .small-screen {
     display: block;
   }

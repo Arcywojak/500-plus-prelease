@@ -9,14 +9,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-@media (min-width: 1300px) {
-  body {
-    background-image: url("../assets/backgroundStain.png");
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
-}
-
 .redirect-block {
   position: fixed;
   z-index: 99999;
@@ -82,6 +74,12 @@ button, input {
 
 @media (max-width: 1000px) {
   .big-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .big-screen-1300 {
     display: none;
   }
 }

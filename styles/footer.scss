@@ -34,8 +34,11 @@
         }
     }
 
+    @media(max-width:1100px){
+        flex-direction: column;
+    }
+
     @media(max-width: 1000px){
-        margin-top: 65px;
         position: relative;
     }
 }
@@ -50,4 +53,12 @@
     text-decoration: underline;
     color:$purple;
     cursor: pointer;
+}
+
+p.purple-color{
+    margin: 0 5px;
+
+    @media(max-width: 1100px){
+        margin-bottom: 10px;
+    }
 }
