@@ -386,6 +386,14 @@ img.scroll{
         }
     }
 
+    &.first{
+        @media(max-width: 1250px){
+            max-width: 950px;
+            margin: 0 auto;
+        }
+    }
+    
+
     
 }
 

@@ -8,21 +8,64 @@ newsletterForm.addEventListener("submit", (e) => {
 
     const emailInput = document.querySelector("#newsletter-input");
 
-    fetch(`http://vps817819.ovh.net:40/newsletter/?email=${emailInput.value}.com`, {
+    fetch(`http://vps817819.ovh.net:40/newsletter/?email=${emailInput.value}`, {
         method: "GET",
         credentials: 'same-origin',
-        mode: 'no-cors',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         }
     })
-        .then( res => console.log(res))
-        .catch(err => console.log(err))
+        .then( res => res.json())
+        .then( response => {
 
-    messageSentBlock.classList.add("fade-in-fade-out");
-    newsletterButton.disabled = true;
+            const EMAIL_TAKEN = "Email already in database";
+            const EMAIL_ADDED = "Email sent properly";
 
-    newsletterButton.classList.add("submitted");    
+            if(response === EMAIL_ADDED){
+
+                if(messageSentBlock.classList.contains("fade-in-fade-out")){
+                    messageSentBlock.classList.remove("fade-in-fade-out");
+
+                    void messageSentBlock.offsetWidth;
+                }
+
+                messageSentBlock.innerText = "Adres E-Mail dodano do naszej bazy!"
+                messageSentBlock.classList.add("fade-in-fade-out");
+                newsletterButton.disabled = true;
+                newsletterButton.classList.add("submitted");
+
+            } else if(response === EMAIL_TAKEN){
+
+                if(messageSentBlock.classList.contains("fade-in-fade-out")){
+                    messageSentBlock.classList.remove("fade-in-fade-out");
+
+                    void messageSentBlock.offsetWidth;
+                }
+
+                messageSentBlock.innerText = "Ten E-mail znajduje się już w naszej bazie!"
+                messageSentBlock.classList.add("fade-in-fade-out");
+                
+
+            }
+
+            
+        })
+        .catch(err => {
+
+            if(messageSentBlock.classList.contains("fade-in-fade-out")){
+                messageSentBlock.classList.remove("fade-in-fade-out");
+
+                void messageSentBlock.offsetWidth;
+            }
+
+            messageSentBlock.innerText = "Coś poszło nie tak. UPS!"
+            messageSentBlock.classList.add("fade-in-fade-out");
+
+        })
+
+        
 })
+
+
 

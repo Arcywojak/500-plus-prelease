@@ -655,6 +655,13 @@ img.scroll {
   width: 100%;
 }
 
+@media (max-width: 1250px) {
+  .subsection.first {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+}
+
 .small-icon-with-text {
   display: -webkit-box;
   display: -ms-flexbox;
