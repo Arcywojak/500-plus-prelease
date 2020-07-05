@@ -115,7 +115,7 @@ const scrollToTheText = (e) => {
 
 document.addEventListener("wheel", (e) => {
 
-    if(window.innerWidth > 1000){
+    if(window.innerWidth > 1250 &&  !("ontouchstart" in document.documentElement) ){
         scrollToTheText(e);
     }
  

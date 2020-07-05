@@ -31,13 +31,9 @@ logo.addEventListener("click", (e) => {
 
 const footerA = document.querySelectorAll(".footer-a");
 
-console.log(footerA)
-
 footerA.forEach( (a) => {
 
     a.addEventListener("click", (e) => {
-
-        console.log("E")
 
         redirect(e);
 

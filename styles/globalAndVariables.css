@@ -150,6 +150,16 @@ button, input {
   }
 }
 
+.small-screen-1250 {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .small-screen-1250 {
+    display: block;
+  }
+}
+
 .great-p {
   font-weight: 700;
   font-size: 18px;
@@ -181,7 +191,7 @@ button, input {
   line-height: 65px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .big-h1 {
     font-size: 2rem;
     line-height: 45px;

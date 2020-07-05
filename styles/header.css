@@ -78,6 +78,12 @@ button, input {
   }
 }
 
+@media (max-width: 1300px) {
+  .big-screen-1300 {
+    display: none;
+  }
+}
+
 .two-section-grid {
   display: -ms-grid;
   display: grid;
