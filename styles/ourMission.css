@@ -206,76 +206,51 @@ button, input {
   }
 }
 
-@media (min-width: 1300px) {
-  html {
-    background-image: url("../assets/backgroundStain.png");
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
-}
-
-@media (max-width: 1100px) {
-  body {
-    padding-bottom: 100px;
-  }
-}
-
-@media (max-width: 1000px) {
-  body {
-    padding-bottom: 0;
-  }
-}
-
-.button-with-big-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.our-mission {
+  display: -ms-grid;
+  display: grid;
+  padding: 120px 8% 100px;
+  -ms-grid-columns: 42% 42%;
+      grid-template-columns: 42% 42%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-column-gap: 16%;
+          column-gap: 16%;
+  min-height: calc(80vh);
+}
+
+.our-mission img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 90%;
+}
+
+.our-mission .line {
+  height: 8px;
+  margin: 20px 0;
+}
+
+.our-mission section {
+  position: relative;
 }
 
 @media (max-width: 1300px) {
-  .button-with-big-text {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  .our-mission {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    padding: 100px 4vw 20px;
+    height: auto;
   }
 }
 
-.button-with-big-text button {
-  width: 150px;
-  background-color: transparent;
-  height: 40px;
-  border: 2px solid #311B92;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-@media (max-width: 1300px) {
-  .button-with-big-text button {
-    margin: 40px;
-  }
-}
-
-.button-with-big-text .text {
-  color: #37269D;
-  font-weight: 600;
-  font-size: 40px;
-}
-
-@media (max-width: 400px) {
-  .button-with-big-text .text {
-    font-size: 30px;
-  }
-}
-
-.two-section-grid .first {
+.our-mission .first {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -284,9 +259,58 @@ button, input {
   text-align: center;
 }
 
-@media (max-width: 1300px) {
-  .with-img {
-    padding-bottom: 60px;
+.our-mission-second-block {
+  padding: 25px 2vw 150px 4vw;
+}
+
+.our-mission-second-block h1 {
+  font-size: 2.5em;
+}
+
+@media (max-width: 500px) {
+  .our-mission-second-block {
+    padding: 25px 2vw 50px 4vw;
+  }
+  .our-mission-second-block h1 {
+    font-size: 2em;
   }
 }
-/*# sourceMappingURL=ambassador.css.map */
+
+.text-blocks-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+}
+
+@media (max-width: 1100px) {
+  .text-blocks-wrapper {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    max-width: 600px;
+  }
+}
+
+.text-block {
+  padding-right: 25px;
+}
+
+.text-block h3 {
+  font-size: 2em;
+}
+
+.text-block p {
+  font-size: 1.2em;
+  padding: 0 3vw 0 0;
+}
+
+@media (max-width: 500px) {
+  .text-block h3 {
+    font-size: 1.5em;
+  }
+  .text-block p {
+    font-size: 1em;
+    padding: 0 3vw 0 0;
+  }
+}
+/*# sourceMappingURL=ourMission.css.map */

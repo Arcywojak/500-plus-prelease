@@ -27,6 +27,7 @@ newsletterForm.addEventListener("submit", (e) => {
                 if(messageSentBlock.classList.contains("fade-in-fade-out")){
                     messageSentBlock.classList.remove("fade-in-fade-out");
 
+                    //reset animation
                     void messageSentBlock.offsetWidth;
                 }
 
@@ -56,6 +57,7 @@ newsletterForm.addEventListener("submit", (e) => {
             if(messageSentBlock.classList.contains("fade-in-fade-out")){
                 messageSentBlock.classList.remove("fade-in-fade-out");
 
+                    //reset animation
                 void messageSentBlock.offsetWidth;
             }
 

@@ -54,6 +54,17 @@ body{
     }
 }
 
+.two-section-grid{
+    .first{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
 .with-img{
     text-align: center;
+
+    @media(max-width: 1300px){
+        padding-bottom: 60px;
+    }
 }

@@ -226,6 +226,11 @@ button, input {
   }
 }
 
+.subsection.first {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 img.interior-img.card {
   width: 25%;
 }
@@ -233,6 +238,7 @@ img.interior-img.card {
 @media (max-width: 1300px) {
   .with-img {
     text-align: center;
+    padding-bottom: 60px;
   }
 }
 
