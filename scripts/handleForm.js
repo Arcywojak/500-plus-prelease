@@ -1,14 +1,19 @@
 const newsletterForm = document.querySelector(".newsletter-form");
+const loader = document.querySelector(".lds-ellipsis");
 
 newsletterForm.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    loader.classList.remove("hidden");
 
     const newsletterButton = document.querySelector(".newsletter-btn");
     const messageSentBlock = document.querySelector(".message-sent");
 
     const emailInput = document.querySelector("#newsletter-input");
 
-    fetch(`http://vps817819.ovh.net:40/newsletter/?email=${emailInput.value}`, {
+    const URL = `https://cz5plusservices.pl:40/newsletter/?email=${emailInput.value}`
+
+    fetch(URL, {
         method: "GET",
         credentials: 'same-origin',
         headers: {
@@ -18,6 +23,8 @@ newsletterForm.addEventListener("submit", (e) => {
     })
         .then( res => res.json())
         .then( response => {
+
+            
 
             const EMAIL_TAKEN = "Email already in database";
             const EMAIL_ADDED = "Email sent properly";
@@ -50,6 +57,7 @@ newsletterForm.addEventListener("submit", (e) => {
 
             }
 
+            loader.classList.add("hidden");
             
         })
         .catch(err => {
@@ -63,6 +71,8 @@ newsletterForm.addEventListener("submit", (e) => {
 
             messageSentBlock.innerText = "Coś poszło nie tak. UPS!"
             messageSentBlock.classList.add("fade-in-fade-out");
+
+            loader.classList.add("hidden");
 
         })
 
